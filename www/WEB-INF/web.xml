@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app 
+   xmlns="http://java.sun.com/xml/ns/javaee" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5"> 
+  <display-name>CookingExpense</display-name>
+  <servlet>
+    <servlet-name>DeleteComment</servlet-name>
+    <servlet-class>CookingExpense.DeleteComment</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteComment</servlet-name>
+    <url-pattern>/DeleteComment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Say</servlet-name>
+    <servlet-class>CookingExpense.Say</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Clearance</servlet-name>
+    <url-pattern>/clearance</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Clearance</servlet-name>
+    <servlet-class>CookingExpense.Clearance</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Say</servlet-name>
+    <url-pattern>/say</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <servlet-name>CookingExpenseServlet</servlet-name>
+    <servlet-class>CookingExpense.CookingExpenseServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CookingExpenseServlet</servlet-name>
+    <url-pattern>/expense</url-pattern>
+  </servlet-mapping>
+  
+   <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
